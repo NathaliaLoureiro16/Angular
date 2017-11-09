@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Calculadora">
+<head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+</head>
+
+<body ng-controller="CalculadoraController">
+<div id="tudo">
+    <h1>Calculadora</h1>
+    <div>
+        <label> <b>Primeiro numero:</b></label>
+         <input  type="text" id="primeiroValor" ng-model="calculo.primeiroValor"/>
+    </div>
+    <div>
+        <label><b>Operações + - * / :</b></label>
+        <input type="text" id="calcular" ng-model="calculo.operacao"/>
+    </div>
+    <div>
+         <label><b>Segundo numero:</b></label>
+         <input type="text" id="segundoValor" ng-model="calculo.segundoValor"/>
+    </div>
+    <button id="botao" style="background-color: #e0e" ng-click="EventoCalculo(calculo)"><b>Calcular</b></button>
+    <p><b> Resultado: {{calculo.resultado}} </b></p>
+</div>
+    <script src="./app.js"></script>
+
+</body>
+</html>
