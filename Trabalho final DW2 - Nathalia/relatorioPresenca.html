@@ -1,0 +1,22 @@
+<table class="table table-striped table-hover table-responsive" id="tabela" ng-controller="relatorioController">
+    <thead>
+        <tr style="text-align:center;">
+            <td>
+                 Nome dos Alunos
+             </td>
+            <td>
+                  Quantidade de Presenças
+             </td>
+         </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="alunoDados in listaChamada" style="text-align:center;">
+          <td>
+             <p>  {{ alunoDados.nomeAluno }} </p>
+        </td>
+         <td>
+              <p>  {{alunoDados.quantidaDePresenca}}  </p>
+        </td>
+           </tr>
+     </tbody>
+</table>

@@ -1,0 +1,80 @@
+
+
+	body {
+		font-family: 'Cabin Sketch', cursive;
+		background-image: url("../papel.jpg");
+	}
+	.content h1,h3{
+		text-align: center;
+		font-size: 50px;
+		font-weight: bold;
+	
+		
+	}
+	
+	.content .content-footer p {
+		color: #000000;
+		font-size: 12px;
+		text-align: center;
+	}
+	.panel {
+		border: 1px solid #ddd;
+		
+	}
+	
+	
+/*    --------------------------------------------------
+	:: meu css
+	-------------------------------------------------- */
+	.nomeAluno{
+		font-size: 18px;
+
+
+	}
+	.botao{
+		width:30%;
+		border-radius: 100px;
+		margin-left: 30px;
+		font-size: 20px;
+		margin-top: 30px;
+	}
+	#cadastroAluno{
+		font-family: 'Cabin Sketch', cursive;
+		font-size: 30px;
+		margin: 150px auto;
+		text-align: center;
+	}
+	#botCadastrar{
+		font-size: 30px;
+	}
+	#tabela{
+		width: 95%;
+		margin: 0 auto;
+		font-weight: bold;
+		text-align: center;
+	}
+	#tabela1{
+		width: 95%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#tabela th, td {
+		font-family: 'Cabin Sketch', cursive;
+		padding: 10px;
+		font-size: 20px;
+	}
+	.nomeCheck{
+		width: 18px;
+		height: 18px;
+	}
+	.table tbody tr.selected td {
+		background-color: #B5E4F8;
+	}
+	.table tbody tr:hover {
+		cursor: pointer;
+		background-color: #B5E4F8;
+	}
+	.table {
+		background-color: #fff;
+		border: 10px solid rgba(238, 238, 238, 0.82);
+	}

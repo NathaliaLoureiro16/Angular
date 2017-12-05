@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt" ng-app="app">
+    <head>
+		<title>Lista de chamada</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">		
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="Css/index.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		 crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+	</head>
+<body>
+        <div class="container">
+                <div class="row">
+                    <section class="content">
+                        <h1>Lista de chamada</h1>
+                        <h3>Disciplina - Desenvolvimento de web 2</h3>
+                        <div class="col-md-12">
+                                <div >
+                                    <div>
+                                        <a href="#!cadastroAluno" class="btn btn-success btn-filter col-md-4 botao">Cadastro do Aluno</a>
+                                           <a href="#!listaChamada" class="btn btn-info btn-filter col-md-4 botao">Lista de Chamada</a>
+                                           <a href="#!relatorioPresenca" class="btn btn-danger btn-filter col-md-4 botao">Relatorio de Presenças</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div ng-view></div> 
+                        </section>
+                    </div>
+                </div>
+                <script src="app.js"></script>
+                <script src="cadastroAluno.js"></script>
+                <script src="taskServicePost.js"></script>
+                <script src="taskServiceGet.js"></script>
+                <script src="listaChamada.js"></script> 
+                <script src="taskServicePut.js"></script>
+              <script src="relatorioPresenca.js"></script>
+            </body>
+         </html>

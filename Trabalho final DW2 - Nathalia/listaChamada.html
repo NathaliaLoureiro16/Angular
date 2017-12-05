@@ -1,0 +1,27 @@
+
+
+    <table class="table table-striped table-hover table-responsive" id="tabela1" ng-controller="listaController">
+            <thead>
+                <tr style="text-align:center;">
+                    <td>
+                        <b>Nome dos Alunos</b> 
+                     </td>
+                    <td>
+                            <button ng-click="attLista()"><b>Contabilizar Presenças</b></button>
+                     </td>
+                 </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="alunoDados in listaChamada" style="text-align:center;">
+                    
+                  <td>
+                     <p>  {{ alunoDados.nomeAluno }} </p>
+                </td>
+                 <td>
+                        <label>
+                                <input class='nomeCheck' type="checkbox" id="checkbox {{alunoDados.id}}" ng-change="chamada(alunoDados.id)" ng-model="presente"/>
+                         </label>
+                </td>
+                   </tr>
+             </tbody>
+        </table>
